@@ -49,6 +49,10 @@ void gameLoad()
 	string s;
 	while (getline(fin,s))
 	{
+		if (s[0] == '#')
+		{
+			continue;
+		}
 		ifstream FIN;
 		if (existsTest("gameData/DLC/" + s + "/pictrue.txt"))
 			FIN.open("gameData/DLC/" + s + "/pictrue.txt");
