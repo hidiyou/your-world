@@ -3,14 +3,17 @@
 using namespace std;
 struct DLC
 {
-	string name = NULL;
-	string description = NULL;
-	bool isSystem = NULL;
-	unsigned long long id = NULL;
-	void* (*doc) (long long) = NULL;
-	void (*onLoad) (void*) = NULL;
-	void (*tick) () = NULL;
-	void (*onUnload)() = NULL;
+	string name;
+	string description;
+	string version;
+	int int_version = 0;
+	bool valid = 0;
+	bool isSystem = 0;
+	unsigned long long id = 0;
+	void* (*doc) (long long) = 0;
+	void (*onLoad) (void*) = 0;
+	void (*tick) () = 0;
+	void (*onUnload)() = 0;
 };
 //解释类似于yourWorld.h，不再赘述
 unsigned long long newDLC(const string name, const DLC d);

@@ -10,8 +10,10 @@
 #error 只支持win平台，如果你是做跨平台，请删除位于yourWorld.h的#error
 #endif //_WIN32
 using namespace std;
-const int windowA = 1200;
-const int windowB = 675;
+const int windowWidth = 1200;
+const int windowHeight = 675;
+const string version = "0.0";
+const int loaderVersion = 0;
 
 //判断文件存在
 bool existsTest(const std::string& name);

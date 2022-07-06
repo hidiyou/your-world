@@ -27,13 +27,13 @@ void gameInit()
 	GetWindowRect(hWnd, &rect);
 	SetWindowPos(hWnd, HWND_TOPMOST, (scrWidth - rect.right) / 2, (scrHeight - rect.bottom) / 2, rect.right - rect.left, rect.bottom - rect.top, SWP_SHOWWINDOW);
 	//初始化窗体
-	initgraph(windowA, windowB);
+	initgraph(windowWidth, windowHeight);
 	cleardevice();
 	setbkmode(TRANSPARENT);
 	SetConsoleTitle("your world");
 	//加载背景
 	if (existsTest("gameData/loading.png"))
-		loadimage(NULL, _T("gameData/loading.png"), windowA, windowB);
+		loadimage(NULL, _T("gameData/loading.png"), windowWidth, windowHeight);
 	else
 	{
 		settextstyle(16, 8, _T("Courier"));	// 设置字体
