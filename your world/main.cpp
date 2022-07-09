@@ -8,5 +8,8 @@ int main()
 {
 	gameInit();
 	gameLoad();
+#pragma warning(disable : 6031)
+//问题已确认
 	_getch();
+#pragma warning(disable : 6031)
 }

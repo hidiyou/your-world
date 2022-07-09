@@ -3,6 +3,8 @@
 #include<fstream>
 #include"DLC.h"
 #include"yourWorld.h"
+#include <sstream>
+#include"cJSON.h"
 
 using namespace std;
 
@@ -42,10 +44,37 @@ unsigned long long getDLCId(const string name)
 }
 bool load_a_DLC(const string name)
 {
+	stringstream buffer;
 	fstream fio;
 	if (name == "system")
 	{
 		fio.open("gameData/system/system.json");
+		buffer << fio.rdbuf();
+		string tmp(buffer.str());
+		cJSON* json = NULL;
+		json = cJSON_Parse(tmp.c_str());
+		if (json == NULL)
+		{
+			putError("system 无法加载，游戏无法运行！！");
+			Sleep(1000);
+			exit(1);
+		}
+		cJSON* LV = NULL;
+		LV = cJSON_GetObjectItem(json, "loader_version");
+		int sysLV = LV->valueint;
+		if (sysLV != loaderVersion)
+		{
+			putError("system版本错误，游戏无法运行");
+		}
+		LV = cJSON_GetObjectItem(json, "system_version");
+		string SV = LV->valuestring;
+#pragma warning(disable : 6385)
+//问题已确认
+		for (int i = 0; supported_system_versions[i] != "END"; ++i)
+		{
+
+		}
+#pragma warning(default : 6385)
 		return 1;
 	}
 	else

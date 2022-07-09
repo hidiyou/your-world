@@ -22,3 +22,4 @@ DLC getDLC(const string name);
 unsigned long long getDLCId(const string name);
 //自动加载一个DLC
 bool load_a_DLC(const string name);
+string supported_system_versions[] = { "T1","END" };

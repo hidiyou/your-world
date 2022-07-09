@@ -25,3 +25,11 @@ VS2022 + EasyX_20220610
 ## 卸载游戏
 
 直接删除即可，Your World 不会在游戏目录以外生成任何文件
+
+# DOC表
+
+|编号|描述|函数声明|
+|----|----|----|
+|0|doc函数（毛用没有）|void* doc(bool _DLC, unsigned long long id);
+|1|获取DLC的ID|unsigned long long getDLCId(const string name);
+|2|自动加载DLC的函数|bool load_a_DLC(const string name);
