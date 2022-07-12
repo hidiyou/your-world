@@ -1,4 +1,4 @@
-name: push_to_gitee
+name: Sync to Gitee
 on: push
 jobs: 
   job1: 
