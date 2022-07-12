@@ -1,0 +1,21 @@
+name: push_to_gitee
+on: push
+jobs: 
+  job1: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: 签出代码
+        uses: actions/checkout@v3
+      - name: 到workspace文件夹
+        run: |
+        cd ${{ github.workspace }}
+        ls
+      - name: 推送到gitee仓库
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          # 来源仓库
+          source-repo: "git@github.com:hidiyou/your-world.git"
+          # 目标仓库
+          destination-repo: "git@gitee.com:hidiyou/your-world.git"
