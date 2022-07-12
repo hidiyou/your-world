@@ -27,12 +27,6 @@
     <ClCompile Include="gameInit.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="DLC.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="DLC_service.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="yourWorld.h">
@@ -45,12 +39,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="cJSON.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DLC.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DLC_service.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
