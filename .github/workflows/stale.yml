@@ -17,7 +17,7 @@ jobs:
     - uses: actions/stale@v5
       with:
         days-before-stale: 31
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.TOKEN }}
         stale-issue-message: '【action自动生成】问题不活跃，即将关闭'
         stale-pr-message: '【action自动生成】PR不活跃，即将关闭'
         stale-issue-label: '不活跃'
