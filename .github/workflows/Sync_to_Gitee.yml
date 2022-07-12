@@ -1,5 +1,5 @@
 name: Sync-GitHub-to-Gitee
-on: push
+on: [ push, delete, create ]
 jobs:
   sync:
     runs-on: ubuntu-latest
