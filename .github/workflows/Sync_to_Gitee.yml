@@ -8,6 +8,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+      - run: git config --global --add safe.directory /github/workspace
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
