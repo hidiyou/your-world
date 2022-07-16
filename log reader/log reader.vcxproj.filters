@@ -15,25 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="client.cpp">
+    <ClCompile Include="log reader.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="gameInit.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="log.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="gameInit.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="your world.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="log.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

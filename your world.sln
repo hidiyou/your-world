@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "your world-client", "your w
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "your world-server", "your world-server\your world-server.vcxproj", "{BDE5EA7F-5051-4AFC-A5A9-9C445CDA1BFB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log reader", "log reader\log reader.vcxproj", "{4B74B96A-B6F6-4C92-9B15-C725309275AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{BDE5EA7F-5051-4AFC-A5A9-9C445CDA1BFB}.Release|x64.Build.0 = Release|x64
 		{BDE5EA7F-5051-4AFC-A5A9-9C445CDA1BFB}.Release|x86.ActiveCfg = Release|Win32
 		{BDE5EA7F-5051-4AFC-A5A9-9C445CDA1BFB}.Release|x86.Build.0 = Release|Win32
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Debug|x64.ActiveCfg = Debug|x64
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Debug|x64.Build.0 = Debug|x64
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Debug|x86.Build.0 = Debug|Win32
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Release|x64.ActiveCfg = Release|x64
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Release|x64.Build.0 = Release|x64
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Release|x86.ActiveCfg = Release|Win32
+		{4B74B96A-B6F6-4C92-9B15-C725309275AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
